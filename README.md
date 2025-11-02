@@ -26,13 +26,17 @@
 
 ### 目录结构
 
-本项目使用TJNU Ground‑based Cloud Dataset (GCD)	包含中国多个省份地面拍摄的云图像数据集。收集于2019-2020年，按 WMO 云属标准分 7 类，约有19,000张图像。
+本项目使用[TJNU Ground‑based Cloud Dataset (GCD)](https://github.com/shuangliutjnu/TJNU-Ground-based-Cloud-Dataset)	数据集，包含中国多个省份地面拍摄的云朵图像。按 WMO 云属标准分 7 类，约有19,000张图像。
 在项目根目录下，请解压GCD.zip获得train和test文件夹并手动创建input_images和output_images文件夹：
 
 *   `train/`: 存放训练图片，每个子文件夹代表一个类别，文件夹名为类别名。
 *   `test/`: 存放测试图片，目录结构与 `train` 文件夹相同。
 *   `input_images/`: 存放需要进行可视化预测的单张图片。
 *   `output_images/`: 可视化后的结果图片将保存在这里。
+*   `train.py`：模型训练脚本
+*   `visualize.py`：图片预测结果可视化
+*   `evaluate.py`：模型评估脚本
+
 
 ## 如何运行
 
