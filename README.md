@@ -1,6 +1,7 @@
 # 基于 MobileNetV2 的云朵分类项目
 
 本项目提供了一个使用 PyTorch 和 MobileNetV2 架构进行云朵分类模型训练、评估和可视化的完整流程。
+使用MIT许可。
 
 ## 项目简介
 
@@ -51,7 +52,7 @@
 
 #### 2. 评估模型
 
-*   确保根目录下已有 `best_model.pth` 和 `class_mapping.json` 文件。也可以直接用我训练好的权重文件，不过他的正确率只有91.8%
+*   确保根目录下已有 `best_model.pth` 和 `class_mapping.json` 文件。也可以直接用我训练好的权重文件，不过他的正确率只有91.8%。
 *   运行评估脚本：
     ```bash
     python evaluate.py
@@ -67,3 +68,4 @@
     python visualize.py
     ```
 *   带有预测结果的图片将会被保存在 `output_images` 文件夹中。
+
